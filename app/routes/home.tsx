@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from "framer-motion";
 import Confetti from 'react-confetti';
 
@@ -15,12 +15,28 @@ const photos = [
 ];
 
 export default function BirthdayPage() {
+  const audioRef = useRef<HTMLAudioElement>(null);
+
   const [photoIndex, setPhotoIndex] = useState(0);
 
   const nextPhoto = () => {
     setPhotoIndex((photoIndex + 1) % photos.length);
   };
 
+  useEffect(() => {
+    const playAudio = () => {
+      audioRef.current?.play().catch((err) => {
+        console.warn("Autoplay failed:", err);
+      });
+    };
+  
+    window.addEventListener('click', playAudio, { once: true });
+  
+    return () => {
+      window.removeEventListener('click', playAudio);
+    };
+  }, []);
+  
   return (
     <div> 
     <div style={{ minHeight: '100vh', backgroundColor: '#ffe4e6', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '1rem' }}>
