@@ -51,7 +51,8 @@ export default function BirthdayPage() {
             style={{ fontSize: '1.125rem', lineHeight: '1.75rem', color: '#374151' }}
           >
             <p style={{ marginBottom: '1rem' }}>
-              Laura is not just a sister; she's an entire lifestyle brand, a living, breathing embodiment of excellence wrapped in cozy sweaters and armed with an Etsy fanbase that has seen more action than a blockbuster film. When others see clay, Laura sees a canvas. With nimble fingers and a vision born of pure artistic sorcery, she shapes earrings and necklaces from humble blobs of polymer into dazzling accessories worthy of red carpets and royal courts alike—each piece a tiny symphony of craftsmanship that whispers, "You could never."
+              
+  Laura isn’t just a sister—she’s the glue between generations, the steady middle of nine Albert kids, quietly excelling while the rest of us scramble to keep up. In a family that thrives on chaos and character, she’s the one who brings the calm and the craft. With a patient eye and hands that turn ordinary clay into wearable art, Laura creates jewelry that feels personal, intentional, and undeniably stylish. Her Etsy shop is less about trends and more about soul—each piece a reflection of her thoughtful creativity and care. She's also the second-best gift giving aunt in the family.
             </p>
             <p style={{ marginBottom: '1rem' }}>
               And let’s not forget, while the rest of the Albert siblings were mastering the art of napping and excuses, Laura was out pounding pavement, conquering 26.2 miles of marathon magic, her sweat glistening like diamonds forged in the fire of unmatched determination. That’s right—she didn’t just run a race, she obliterated the idea that any other Albert could even hope to keep up.
